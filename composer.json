@@ -1,0 +1,32 @@
+{
+    "name": "loantap/aws-s3",
+    "license": "GPL-3.0-or-later",
+    "type": "awesome-handler",
+    "description": "AWS s3 integration for Awesome enterprise",
+	"keywords": ["WordPress", "Low Code"," Awesome Enterprise","Shortcode","AWS S3"],
+	"homepage": "https://getawesomestudio.com/",
+	"authors": [
+		{
+            "name": "Loantap",
+            "homepage": "https://loantap.in/"
+        }
+       
+    ],
+	 "support": {
+        "docs": "https://www.getawesomestudio.com/enterprise-tutorial/"
+    },
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "~1.0",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "aws/aws-sdk-php": "^3.171"
+    },
+	 "extra": { 
+		"installer-name": "aws-s3"
+    },
+    "config": {
+		"process-timeout": 600,
+        "sort-packages": true
+    },
+	"prefer-stable": true
+}
