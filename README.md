@@ -1,5 +1,9 @@
+
 # aws-s3
 Aws S3 shortcode which will handle all the operation of aws s3 like fetch get etc 
+
+# You require awesome-enterprise to use this https://github.com/WPoets/awesome-enterprise 
+``` composer require loantap/aws-s3 ```
 
 ## Fetch all files from s3 bucket folder
 	
