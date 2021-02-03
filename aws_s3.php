@@ -599,3 +599,17 @@ function download_public_file($atts,$content=null,$shortcode=null){
 		}
 	
 }
+
+function connectS3($config){
+	
+	$s3 = S3Client::factory(
+      array(
+        'credentials' => array(
+          'key' => $config['IAM_KEY'],
+          'secret' => $config['IAM_SECRET']
+        ),
+        'version' => $config['aws_version'],
+        'region'  => $config['aws_region']
+      ));
+	return $s3;
+}
